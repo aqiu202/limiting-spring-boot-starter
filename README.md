@@ -2,7 +2,7 @@
 ### 描述
 对接口的限流功能的封装，主要应用场景： 
 
-- 单位时间内防止重复提交
+- 单位时间内防止重复提交（可选择redis,caffeine和guava作为缓存，只有redis可以实现分布式）
 
 - 对某个接口进行并发数的限制
 
@@ -15,7 +15,7 @@
 <dependency>
     <groupId>com.redsoft.starters.own</groupId>
     <artifactId>limiting-spring-boot-starter</artifactId>
-    <version>2.0.0</version>
+    <version>1.0.0</version>
 </dependency>
 ```
 

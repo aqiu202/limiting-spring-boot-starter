@@ -12,6 +12,7 @@
 
     <groupId>com.redsoft.starters.own</groupId>
     <artifactId>limiting-spring-boot-starter</artifactId>
+    <version>1.0.0</version>
     <packaging>jar</packaging>
 
     <properties>
