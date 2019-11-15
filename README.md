@@ -9,12 +9,13 @@
 - 对某个接口进行单位时间内请求数量的限制（令牌桶算法）
 
 ### 引用
-maven坐标
+下载后本地安装，然后引用maven坐标
 
 ```
 <dependency>
     <groupId>com.redsoft.starters.own</groupId>
     <artifactId>limiting-spring-boot-starter</artifactId>
+    <version>2.0.0</version>
 </dependency>
 ```
 
