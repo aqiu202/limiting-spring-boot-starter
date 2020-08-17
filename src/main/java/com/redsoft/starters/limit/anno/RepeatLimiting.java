@@ -7,6 +7,7 @@ import static java.lang.annotation.RetentionPolicy.RUNTIME;
 import java.lang.annotation.Documented;
 import java.lang.annotation.Retention;
 import java.lang.annotation.Target;
+import java.util.concurrent.TimeUnit;
 
 
 @Documented
@@ -14,9 +15,23 @@ import java.lang.annotation.Target;
 @Target({METHOD, TYPE})
 public @interface RepeatLimiting {
 
-    String key() default "";
-
     String message() default "请不要重复提交";
 
-    String generatorName() default "";
+    String keyGenerator() default "";
+
+    /**
+     * 几秒内不允许重复访问
+     */
+    long timeout() default 0;
+
+    /**
+     * 时间单位
+     */
+    TimeUnit timeUnit() default TimeUnit.SECONDS;
+
+    /**
+     * key设置
+     */
+    String key() default "";
+
 }

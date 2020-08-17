@@ -6,6 +6,8 @@ import javax.servlet.http.HttpServletRequest;
 @FunctionalInterface
 public interface KeyGenerator {
 
+    String DEFAULT_METHOD_KEY_GENERATOR = "methodKeyGenerator";
+
     /**
      * Generate a key for the given method and its parameters.
      * @param target the target instance
