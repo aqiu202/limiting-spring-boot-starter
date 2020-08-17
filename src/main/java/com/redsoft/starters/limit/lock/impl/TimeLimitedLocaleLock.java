@@ -5,9 +5,8 @@ import com.redsoft.starters.limit.lock.CacheableLock;
 import java.util.concurrent.TimeUnit;
 
 /**
+ * <pre>集中式缓存实现的锁</pre>
  * @author aqiu
- * @date 2020/2/5 4:45 下午
- * @description 集中式缓存实现的锁
  **/
 public class TimeLimitedLocaleLock implements CacheableLock {
 

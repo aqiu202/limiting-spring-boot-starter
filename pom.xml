@@ -12,13 +12,34 @@
 
     <groupId>com.github.aqiu202</groupId>
     <artifactId>limiting-spring-boot-starter</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.1</version>
     <packaging>jar</packaging>
+    <url>https://github.com/aqiu202/limiting-spring-boot-starter</url>
+    <description>A Simple Current limiting tool starter for Spring Boot</description>
+    <licenses>
+        <license>
+            <name>The Apache Software License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+    <scm>
+        <url>https://github.com/aqiu202/limiting-spring-boot-starter</url>
+        <connection>https://github.com/aqiu202/limiting-spring-boot-starter.git</connection>
+    </scm>
 
     <properties>
         <caffeine.version>2.8.0</caffeine.version>
         <guava.version>28.1-jre</guava.version>
     </properties>
+    <developers>
+        <developer>
+            <name>aqiu</name>
+            <id>aqiu</id>
+            <email>aqiuqiuweb@163.com</email>
+            <timezone>+8</timezone>
+        </developer>
+    </developers>
 
     <dependencies>
         <dependency>
@@ -61,4 +82,62 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
+
+    <distributionManagement>
+        <repository>
+            <id>${distribution.repository.id}</id>
+            <name>nexus-releases</name>
+            <url>${distribution.repository.url}</url>
+            <uniqueVersion>true</uniqueVersion>
+        </repository>
+        <snapshotRepository>
+            <id>${distribution.snapshotRepository.id}</id>
+            <name>nexus-snapshots</name>
+            <url>${distribution.snapshotRepository.url}</url>
+        </snapshotRepository>
+    </distributionManagement>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-source-plugin</artifactId>
+                <version>2.2.1</version>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>jar-no-fork</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <version>2.9.1</version>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-gpg-plugin</artifactId>
+                <version>1.6</version>
+                <executions>
+                    <execution>
+                        <phase>verify</phase>
+                        <goals>
+                            <goal>sign</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
 </project>

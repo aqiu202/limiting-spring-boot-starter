@@ -21,16 +21,19 @@ public @interface RepeatLimiting {
 
     /**
      * 几秒内不允许重复访问
+     * @return timeout
      */
     long timeout() default 0;
 
     /**
      * 时间单位
+     * @return 时间单位
      */
     TimeUnit timeUnit() default TimeUnit.SECONDS;
 
     /**
      * key设置
+     * @return key
      */
     String key() default "";
 

@@ -59,9 +59,8 @@ public class LimitAspect implements ApplicationContextAware {
     }
 
     /**
+     * <pre>防重复提交（限时锁）-类拦截</pre>
      * @author aqiu
-     * @date 2020/2/8 1:19 上午
-     * @description 防重复提交（限时锁）-类拦截
      * @param pjp: 切点
      * @return {@link Object}
      **/
@@ -80,9 +79,8 @@ public class LimitAspect implements ApplicationContextAware {
     }
 
     /**
+     * <pre>防重复提交（限时锁）-方法拦截</pre>
      * @author aqiu
-     * @date 2020/2/8 1:18 上午
-     * @description 防重复提交（限时锁）-方法拦截
      * @param pjp: 切点
      * @param repeatLimiting: 注解信息
      * @return {@link Object}
@@ -137,9 +135,8 @@ public class LimitAspect implements ApplicationContextAware {
     }
 
     /**
+     * <pre>并发线程数限流-类拦截</pre>
      * @author aqiu
-     * @date 2020/2/8 1:15 上午
-     * @description 并发线程数限流-类拦截
      * @param pjp: 切点
      * @return {@link Object}
      **/
@@ -158,9 +155,8 @@ public class LimitAspect implements ApplicationContextAware {
     }
 
     /**
+     * <pre>并发线程数限流-方法拦截</pre>
      * @author aqiu
-     * @date 2020/2/8 1:15 上午
-     * @description 并发线程数限流-方法拦截
      * @param pjp: 切点
      * @param threadLimiting: 注解信息
      * @return {@link Object}
@@ -204,9 +200,8 @@ public class LimitAspect implements ApplicationContextAware {
     }
 
     /**
+     * <pre>令牌桶算法限流-类拦截</pre>
      * @author aqiu
-     * @date 2020/2/8 1:16 上午
-     * @description 令牌桶算法限流-类拦截
      * @param pjp: 切点
      * @return {@link Object}
      **/
@@ -225,9 +220,8 @@ public class LimitAspect implements ApplicationContextAware {
     }
 
     /**
+     * <pre>令牌桶算法限流-方法拦截</pre>
      * @author aqiu
-     * @date 2020/2/8 1:20 上午
-     * @description 令牌桶算法限流-方法拦截
      * @param pjp: 切点
      * @param currentLimiting: 注解信息
      * @return {@link Object}
@@ -289,10 +283,9 @@ public class LimitAspect implements ApplicationContextAware {
     }
 
     /**
+     * <pre>根据aop切面获取当前执行的方法</pre>
      * @name getMethod
      * @author AQIU
-     * @description 根据aop切面获取当前执行的方法
-     * @date 2018/8/8 上午11:16
      * @param pjp pjp
      * @return java.lang.reflect.Method
      **/

@@ -25,22 +25,14 @@ public @interface EnableLimiting {
 
     /**
      * 多少秒内每个用户只允许访问一次
+     * @return timeout
      */
     long timeout() default 3;
 
     /**
      * 时间单位
+     * @return 时间单位
      */
     TimeUnit timeUnit() default TimeUnit.SECONDS;
-
-    /**
-     * 每秒可处理的请求数量
-     */
-    int permits() default 100;
-
-    /**
-     * 可允许的最大访问线程数量
-     */
-    int threads() default 200;
 
 }

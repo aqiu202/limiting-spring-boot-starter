@@ -16,6 +16,7 @@ public @interface ThreadLimiting {
 
     /**
      * 可允许的最大访问线程数量
+     * @return 最大并发数
      */
     int threads() default 200;
 
@@ -25,6 +26,7 @@ public @interface ThreadLimiting {
 
     /**
      * key设置
+     * @return key
      */
     String key() default "";
 

@@ -16,6 +16,7 @@ public @interface CurrentLimiting {
 
     /**
      * 每秒可处理的请求数量
+     * @return 请求数量
      */
     int permits() default 100;
 
@@ -25,6 +26,7 @@ public @interface CurrentLimiting {
 
     /**
      * key设置
+     * @return key
      */
     String key() default "";
 

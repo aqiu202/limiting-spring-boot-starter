@@ -11,7 +11,7 @@
 【注】其功能实现都使用了缓存，其中缓存可选择redis、caffeine和guava， 
 只有redis可以实现分布式，其他方式只能在单机上使用
 ### 引用
-maven坐标（暂时还没发布到maven中央仓库）
+maven坐标（已经发布到maven中央仓库）
 
 ```xml
 <dependency>
