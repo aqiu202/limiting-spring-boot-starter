@@ -12,7 +12,7 @@
 
     <groupId>com.github.aqiu202</groupId>
     <artifactId>limiting-spring-boot-starter</artifactId>
-    <version>0.0.1</version>
+    <version>0.0.2</version>
     <packaging>jar</packaging>
     <url>https://github.com/aqiu202/limiting-spring-boot-starter</url>
     <description>A Simple Current limiting tool starter for Spring Boot</description>
