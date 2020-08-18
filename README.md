@@ -17,7 +17,7 @@ maven坐标（已经发布到maven中央仓库）
 <dependency>
     <groupId>com.github.aqiu202</groupId>
     <artifactId>limiting-spring-boot-starter</artifactId>
-    <version>0.0.1</version>
+    <version>0.0.2</version>
 </dependency>
 ```
 
